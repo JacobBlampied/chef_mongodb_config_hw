@@ -1,0 +1,1 @@
+# chef_mongodb_config_hw
