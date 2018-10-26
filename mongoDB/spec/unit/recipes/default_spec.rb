@@ -30,13 +30,13 @@ describe 'mongoDB::default' do
     it 'should update all sources' do
       expect(chef_run).to update_apt_update('update')
     end
-    
+
     it 'should be enabled' do
-      expect(chef_run).to enable_service 'mongod-org'
+      expect(chef_run).to enable_service 'mongod'
     end
 
     it 'should be started' do
-      expect(chef_run).to start_service 'mongod-org'
+      expect(chef_run).to start_service 'mongod'
     end
 
   end
